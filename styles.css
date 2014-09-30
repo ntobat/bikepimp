@@ -1,20 +1,212 @@
-.nav {
+/*Header*/
+.header{
+	background-color: #FCFCFC;
+	border-bottom: 1px solid #DDD;
+	font-family: 'lucida grande';
+	font-weight:300;
+	font-size: 1.4em;
+	padding:5px;
+	height: 90px;
+}
+.menu > li{
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: right;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 14px 10px 14px 10px;
+	margin-top: 40px;
+}
+.logo-icon img{
+	border-radius: 30%;
+	height: 75px;
+	width: 75px;
+	float: left;
+	margin-right: 10px;
+}
+.logo{
+	display: inline;
+}
+#url{
+	margin-top: 40px;
 }
 
-.title-logo{
-	text-transform: uppercase;
+/*Carousel*/
+.slider{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	border-bottom: 1px solid #ddd;
+}
+.slide{
+	background: transparent;
+	background-size: cover;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.active-slide{
+	display: block;
+}
+.slide-copy h1{
+	color: black;
+	font-family: 'Rock Salt', cursive;
+	font-weight: 400;
+	font-size: 50px;
+	margin: 50px 5px 5px 0px;
+	text-align: center;
+}
+.slide-copy p{
+	color:black;
+	font-family: 'lucida grande';
+	font-size: 1.15em;
+	line-height: 1.75em;
+	margin-bottom: 15px;
+	margin-top: 16px;
+	text-align: center;
+}
+.slide-img{
+	text-align: right;
+}
+.left-column{
+	border-right: 1px solid #ddd;
+}
+.right-column{
+	text-align: right;
+}
+th, td{
+	padding:15px;
+}
+#btn1{
+   border-top: 1px solid #f7b997;
+   background: #ff6940;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff5b1f), to(#ff6940));
+   background: -webkit-linear-gradient(top, #ff5b1f, #ff6940);
+   background: -moz-linear-gradient(top, #ff5b1f, #ff6940);
+   background: -ms-linear-gradient(top, #ff5b1f, #ff6940);
+   background: -o-linear-gradient(top, #ff5b1f, #ff6940);
+   padding: 9.5px 19px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: 'rock salt';
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#btn1:hover {
+   border-top-color: #944122;
+   background: #944122;
+   color: #ccc;
+   }
+#btn1:active {
+   border-top-color: #5c341b;
+   background: #5c341b;
+   }
+#btn2{
+   border-top: 1px solid #f7b997;
+   background: #ff6940;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff5b1f), to(#ff6940));
+   background: -webkit-linear-gradient(top, #ff5b1f, #ff6940);
+   background: -moz-linear-gradient(top, #ff5b1f, #ff6940);
+   background: -ms-linear-gradient(top, #ff5b1f, #ff6940);
+   background: -o-linear-gradient(top, #ff5b1f, #ff6940);
+   padding: 9.5px 19px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   font-family: 'rock salt';
+   text-decoration: none;
+   vertical-align: middle;
+   }
+#btn2:hover {
+   border-top-color: #944122;
+   background: #944122;
+   color: #ccc;
+   }
+#btn2:active {
+   border-top-color: #5c341b;
+   background: #5c341b;
+   }
+
+/*Slider Nav*/
+.slider-nav{
+	text-align: center;
+	margin-top: 20px;
+}
+.arrow-prev{
+	margin-right: 45px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 9px;
+}
+.arrow-next{
+	margin-left: 45px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 9px;
+}
+.slider-dots{
+	list-style: none;
+	display: inline-block;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.slider-dots li{
+	color:#d8d8d8;
+	display: inline;
+	font-size: 30px;
+	margin-right: 5px;
+	padding: 2px;
+}
+.slider-dots li.active-dot{
+	color: #363636;
 }
 
-.jumbotron{
-	height: 500px
-	background-image: url('http://uploads.jovo.to/idea_attachments/432718/120_bigger.jpg?1299144464');
-
+/*Slide Feature*/
+.slide-feature {
+  text-align: center;
+  background-image: url('http://www.tuvie.com/wp-content/uploads/cyclo-urban-bicycle5.jpg');
+  height: 500px;
 }
 
-.title-logo img{
-	height:45px;
-	width:75px;
+.slide-feature img {
+  margin-top: 112px;
+  margin-bottom: 28px;
 }
+
+.slide-feature a {
+  display: block;
+  color: black;
+  
+  font-family: 'Rock Salt', cursive;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
